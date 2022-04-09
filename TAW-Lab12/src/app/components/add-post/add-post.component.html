@@ -1,0 +1,17 @@
+<div class="container">
+    <form action="post" autocomplete="off" method="POST">
+        <div class="input-group">
+            <input [(ngModel)]="postData.image" type="text" class="form-control" name="image" placeholder="Image URL"
+                title="Image">
+        </div>
+
+        <div class="input-group">
+            <input [(ngModel)]="postData.text" type="text" class="form-control" name="text" placeholder="Text"
+                title="Text">
+        </div>
+
+        <button (click)="addPost()" class="btn btn-primary" type="submit" title="Przycisk dodaj post">
+            Add post
+        </button>
+    </form>
+</div>
